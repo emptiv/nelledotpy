@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icon.png">
     <title>Marinelle's CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="intro-section">
         <div class="icon-container">
-            <img src="ID.jpg" alt="Icon" class="icon">
+            <img src="assets/ID.jpg" alt="Icon" class="icon">
         </div>
         <div class="text-container">
             <div class="name">
@@ -18,14 +19,15 @@
             </div>
             <div class="social-icons">
                 <a href="https://github.com/emptiv" target="_blank">
-                    <img src="github.png" alt="GitHub" class="social-icon">
+                    <img src="assets/github.png" alt="GitHub" class="social-icon">
                 </a>
                 <a href="https://www.linkedin.com/in/nelle-py/" target="_blank">
-                    <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+                    <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
                 </a>
             </div>
             <div class="intro">
                 <p><b>React Native | Machine Learning | Python</b></p>
+                <a href="assets/Marinelle_Torrano_Resume.pdf" download class="resume-btn">Download Resume</a>
             </div>
         </div>
     </div>
@@ -48,14 +50,51 @@
     <div class="lc">
         <div class="lc-text">
             <h3><u>Certifications:</u></h3>
-            <p><i><b>Microsoft Digital Literacy</b> · TESDA Online Program <br> <b>IC3 Digital Literacy Certification GS6 Level 1</b> · Certiport <br> <b>IT Specialist - Python</b> · Certiport <br> <b>Introduction to Cybersecurity</b> · Cisco </i></p>
+            
+            <div class="cert-row">
+                <a href="https://www.credly.com/badges/b1284996-55f1-4e86-a389-1aa0e6416b35" target="_blank">
+                    <img src="assets/cybersec.png" alt="Cybersecurity Badge" class="badge">
+                </a>
+                <div class="cert-info">
+                    <p class="cert-title"><b>Introduction to Cybersecurity</b></p>
+                    <p class="cert-details">Cisco · 2024, Dec 28 · Score: 73%</p>
+                </div>
+            </div>
+
+            <div class="cert-row">
+                <a href="https://www.credly.com/badges/e56be39d-8041-4f11-964f-ceab190e9b03" target="_blank">
+                    <img src="assets/it-python.png" alt="Python Badge" class="badge">
+                </a>
+                <div class="cert-info">
+                    <p class="cert-title"><b>IT Specialist - Python</b></p>
+                    <p class="cert-details">Certiport · 2024, Dec 8 · Score: 860/1000</p>
+                </div>
+            </div>
+
+            <div class="cert-row">
+                <a href="https://www.credly.com/badges/f0471232-f5bf-4825-b609-8612f241d929" target="_blank">
+                    <img src="assets/ic3.png" alt="IC3 Badge" class="badge">
+                </a>
+                <div class="cert-info">
+                    <p class="cert-title"><b>IC3 Digital Literacy Certification GS6 Level 1</b></p>
+                    <p class="cert-details">Certiport · 2024, May 30 · Score: 965/1000</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="lc">
+
+    <div class="lc" id="skills">
         <div class="lc-text">
-            <h3><u>Programming Languages:</u></h3>
-            <p><i><b>Typescript</b>, JavaScript, Python, HTML/CSS, Java</i></p>
+            <h3><u>Skills & Technologies:</u></h3>
+            <p>
+                <img src="assets/html.png" alt="HTML" class="skill-icon">
+                <img src="assets/css.png" alt="CSS" class="skill-icon">
+                <img src="assets/js.png" alt="JavaScript" class="skill-icon">
+                <img src="assets/python.png" alt="Python" class="skill-icon">
+                <img src="assets/react.png" alt="React Native" class="skill-icon">
+            </p>
         </div>
     </div>
 
@@ -63,6 +102,26 @@
         <div class="lc-text">
             <h3><u>Contact:</u></h3>
             <p><i>Email:</i> <b>marinelletorrano@gmail.com</b> <br> <i>Mobile:</i> <b>0950 734 2454</b></p>
+        </div>
+    </div>
+
+    <div class="lc" id="projects">
+        <div class="lc-text">
+            <h3><u>Projects:</u></h3>
+
+            <div class="project-card">
+                <h4>Image Classification with CNN</h4>
+                <p>Built a convolutional neural network to classify images with high accuracy using TensorFlow in Jupyter Notebook.</p>
+                <p><b>Tech Stack:</b> Python, TensorFlow, Jupyter Notebook</p>
+                <a href="https://github.com/emptiv/image-classification" target="_blank">GitHub Repo</a>
+            </div>
+
+            <div class="project-card">
+                <h4>React Native Task Tracker</h4>
+                <p>Mobile app for tracking tasks with local storage and clean UI design.</p>
+                <p><b>Tech Stack:</b> React Native, JavaScript</p>
+                <a href="https://github.com/emptiv/task-tracker" target="_blank">GitHub Repo</a>
+            </div>
         </div>
     </div>
 </body>
