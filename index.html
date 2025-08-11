@@ -1,128 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/icon.png" />
     <title>Marinelle's CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="intro-section">
-        <div class="icon-container">
-            <img src="assets/ID.jpg" alt="Icon" class="icon">
-        </div>
-        <div class="text-container">
-            <div class="name">
-                <p>Marinelle Torrano</p>
+
+    <nav class="sticky-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="hero" id="about">
+        <header class="intro hero-flex">
+            <div class="hero-text">
+            <h1 class="name">Marinelle Torrano</h1>
+            <p class="desc">React Native, Python, and more</p>
             </div>
-            <div class="social-icons">
-                <a href="https://github.com/emptiv" target="_blank">
-                    <img src="assets/github.png" alt="GitHub" class="social-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/nelle-py/" target="_blank">
-                    <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
-                </a>
-            </div>
-            <div class="intro">
-                <p><b>React Native | Machine Learning | Python</b></p>
-                <a href="assets/Marinelle_Torrano_Resume.pdf" download class="resume-btn">Download Resume</a>
-            </div>
-        </div>
-    </div>
+            <img src="assets/ID.jpg" alt="Marinelle's ID picture" class="hero-icon" />
+        </header>
+        </section>
 
-    <br>
-    <div class="lc">
-        <div class="ps-text">
-            <h3><u>Professional Summary:</u></h3>
-            <p>Graduating Computer Science student focusing on <b>Android development using React Native</b> and <b>machine learning</b>, particularly in <b>image classification with convolutional neural networks (CNNs)</b> using <b>Jupyter Notebook</b>. I enjoy combining technical precision with practical applications, and I'm especially interested in building responsive mobile interfaces and experimenting with AI-driven tools for <b><u>real-world impact</u></b>.</p>
-        </div>
-    </div>
+        <!-- About -->
+        <section class="section">
+            <p>Computer Science graduate-to-be specializing in React Native Android apps and machine learning for image classification with CNNs. Passionate about crafting responsive mobile UIs and leveraging AI for real-world impact.</p>
+        </section>
 
-    <div class="lc">
-        <div class="lc-text">
-            <h3><u>Education:</u></h3>
-            <p><h3><b>Bachelor of Science in Computer Science<br><i>with Specialization in Data Science</i></b></h3><i>University of Perpetual Help System Dalta - Molino Campus</i><br>2023 - 2026</p>
-        </div>
-    </div>
-
-    <div class="lc">
-        <div class="lc-text">
-            <h3><u>Certifications:</u></h3>
-            
-            <div class="cert-row">
-                <a href="https://www.credly.com/badges/b1284996-55f1-4e86-a389-1aa0e6416b35" target="_blank">
-                    <img src="assets/cybersec.png" alt="Cybersecurity Badge" class="badge">
-                </a>
-                <div class="cert-info">
-                    <p class="cert-title"><b>Introduction to Cybersecurity</b></p>
-                    <p class="cert-details">Cisco · 2024, Dec 28 · Score: 73%</p>
-                </div>
-            </div>
-
-            <div class="cert-row">
-                <a href="https://www.credly.com/badges/e56be39d-8041-4f11-964f-ceab190e9b03" target="_blank">
-                    <img src="assets/it-python.png" alt="Python Badge" class="badge">
-                </a>
-                <div class="cert-info">
-                    <p class="cert-title"><b>IT Specialist - Python</b></p>
-                    <p class="cert-details">Certiport · 2024, Dec 8 · Score: 860/1000</p>
-                </div>
-            </div>
-
-            <div class="cert-row">
-                <a href="https://www.credly.com/badges/f0471232-f5bf-4825-b609-8612f241d929" target="_blank">
-                    <img src="assets/ic3.png" alt="IC3 Badge" class="badge">
-                </a>
-                <div class="cert-info">
-                    <p class="cert-title"><b>IC3 Digital Literacy Certification GS6 Level 1</b></p>
-                    <p class="cert-details">Certiport · 2024, May 30 · Score: 965/1000</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="lc" id="skills">
-        <div class="lc-text">
-            <h3><u>Skills & Technologies:</u></h3>
-            <p>
-                <img src="assets/html.png" alt="HTML" class="skill-icon">
-                <img src="assets/css.png" alt="CSS" class="skill-icon">
-                <img src="assets/js.png" alt="JavaScript" class="skill-icon">
-                <img src="assets/python.png" alt="Python" class="skill-icon">
-                <img src="assets/react.png" alt="React Native" class="skill-icon">
+        <!-- Education -->
+        <section class="section">
+            <h4 class="heading">Education</h4>
+            <p><b>B.S. in Computer Science</b><br />
+               <i>Specialization in Data Science</i><br />
+               University of Perpetual Help System Dalta – Molino Campus<br />
+               2023 – 2026
             </p>
-        </div>
-    </div>
+        </section>
 
-    <div class="lc">
-        <div class="lc-text">
-            <h3><u>Contact:</u></h3>
-            <p><i>Email:</i> <b>marinelletorrano@gmail.com</b> <br> <i>Mobile:</i> <b>0950 734 2454</b></p>
-        </div>
-    </div>
-
-    <div class="lc" id="projects">
-        <div class="lc-text">
-            <h3><u>Projects:</u></h3>
-
-            <div class="project-card">
-                <h4>Image Classification with CNN</h4>
-                <p>Built a convolutional neural network to classify images with high accuracy using TensorFlow in Jupyter Notebook.</p>
-                <p><b>Tech Stack:</b> Python, TensorFlow, Jupyter Notebook</p>
-                <a href="https://github.com/emptiv/image-classification" target="_blank">GitHub Repo</a>
+        <!-- Certifications -->
+        <section class="section">
+            <h4 class="heading">Certifications</h4>
+            <div class="certifications-container">    
+                <a href="https://www.credly.com/badges/b1284996-55f1-4e86-a389-1aa0e6416b35" target="_blank" class="cert-row" rel="noopener noreferrer">
+                    <span>Introduction to Cybersecurity</span>
+                    <span>Cisco</span>
+                    <span>Dec 2024</span>
+                </a>
+                <a href="https://www.credly.com/badges/e56be39d-8041-4f11-964f-ceab190e9b03" target="_blank" class="cert-row" rel="noopener noreferrer">
+                    <span>IT Specialist – Python</span>
+                    <span>Certiport</span>
+                    <span>Dec 2024</span>
+                </a>
+                <a href="https://www.credly.com/badges/f0471232-f5bf-4825-b609-8612f241d929" target="_blank" class="cert-row" rel="noopener noreferrer">
+                    <span>IC3 Digital Literacy – GS6 Level 1</span>
+                    <span>Certiport</span>
+                    <span>May 2024</span>
+                </a>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h4>React Native Task Tracker</h4>
-                <p>Mobile app for tracking tasks with local storage and clean UI design.</p>
-                <p><b>Tech Stack:</b> React Native, JavaScript</p>
-                <a href="https://github.com/emptiv/task-tracker" target="_blank">GitHub Repo</a>
+        <!-- Skills & Technologies -->
+        <section class="section">
+            <h4 class="heading">Skills & Technologies</h4>
+            <div class="skills-row">
+                <img src="assets/react-native.png" alt="React Native logo" title="React Native" class="skill-icon" />
+                <img src="assets/typescript.png" alt="TypeScript logo" title="TypeScript" class="skill-icon" />
+                <img src="assets/python.png" alt="Python programming language logo" title="Python" class="skill-icon" />
+                <img src="assets/javascript.png" alt="JavaScript logo" title="JavaScript" class="skill-icon" />
+                <img src="assets/html.png" alt="HTML logo" title="HTML" class="skill-icon" />
+                <img src="assets/css.svg" alt="CSS logo" title="CSS" class="skill-icon" />
+                <img src="assets/flask.svg" alt="Flask logo" title="Flask" class="skill-icon white-icon" />
+                <img src="assets/convex.png" alt="Convex logo" title="Convex" class="skill-icon" />
+                <img src="assets/tensorflow.png" alt="TensorFlow logo" title="TensorFlow" class="skill-icon" />
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h4 class="heading">Projects</h4>
+
+            <article class="projects-table" aria-label="Project: Image Classification with CNN">
+                <div class="project-row" role="button" tabindex="0" onclick="toggleProject(this)" onkeypress="if(event.key==='Enter') toggleProject(this)">
+                    <span>Image Classification with CNN</span>
+                    <span>In progress</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="project-details" style="display:none;">
+                    <p><strong>Problem:</strong> Developed a model to classify handwritten Baybayin characters to assist in preserving Filipino heritage scripts.</p>
+                    <p><strong>Tools & Technologies:</strong> Python, TensorFlow, Keras, Jupyter Notebook.</p>
+                    <p><strong>Outcome:</strong> Achieved high accuracy in character classification, providing a base for future handwriting recognition apps.</p>
+                    <a href="https://github.com/emptiv/handwriting-backend" target="_blank" rel="noopener noreferrer">View the GitHub repository</a>
+                </div>
+            </article>
+
+            <article class="projects-table" aria-label="Project: Interactive Learning Mobile App for Baybayin">
+                <div class="project-row" role="button" tabindex="0" onclick="toggleProject(this)" onkeypress="if(event.key==='Enter') toggleProject(this)">
+                    <span>Interactive Learning Mobile App for Baybayin</span>
+                    <span>In progress</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="project-details" style="display:none;">
+                    <p><strong>Problem:</strong> Created a mobile app to facilitate engaging learning of the Baybayin script using quizzes, lessons, and handwriting exercises.</p>
+                    <p><strong>Tools & Technologies:</strong> React Native, TypeScript, Expo, Styled Components.</p>
+                    <p><strong>Outcome:</strong> Delivered an intuitive app with interactive features aimed at improving user retention and script literacy.</p>
+                    <a href="https://github.com/emptiv/spotlight-app" target="_blank" rel="noopener noreferrer">View the GitHub repository</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Contact -->
+        <footer id="contact" class="section contact-section">
+            <h4 class="heading">Contact me</h4>
+            <div class="contact-column">
+                <a href="https://www.linkedin.com/in/nelle-py" target="_blank" class="contact-link" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/emptiv" target="_blank" class="contact-link" rel="noopener noreferrer">GitHub</a>
+                <div>
+                    <span class="contact-link email-link" role="button" tabindex="0" onclick="toggleEmail()" onkeypress="if(event.key==='Enter') toggleEmail()">Email</span>
+                    <span id="email-text" class="email-text" aria-live="polite" aria-atomic="true"></span>
+                </div>
+                <a href="assets/resume.pdf" download class="contact-link">Resume</a>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        function toggleProject(row) {
+            const details = row.nextElementSibling;
+            const arrow = row.querySelector('.arrow');
+            const isVisible = details.style.display === "block";
+            details.style.display = isVisible ? "none" : "block";
+            arrow.textContent = isVisible ? "▼" : "▲";
+        }
+
+        function toggleEmail() {
+            const emailEl = document.getElementById('email-text');
+            emailEl.textContent = emailEl.textContent ? '' : 'marinelletorrano@gmail.com';
+        }
+    </script>
 </body>
 </html>
