@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="assets/icon.png" />
-    <title>Marinelle's CV</title>
+    <title>Marinelle Torrano - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -45,7 +45,17 @@
         <!-- Certifications -->
         <section class="section">
             <h4 class="heading">Certifications</h4>
-            <div class="certifications-container">    
+            <div class="certifications-container">
+                <a href="https://www.credly.com/badges/8c05427c-1aaf-40d8-984f-fc8eb8dddc18" target="_blank" class="cert-row" rel="noopener noreferrer">
+                    <span>Create Digital Content, Communicate and Collaborate Online</span>
+                    <span>Cisco</span>
+                    <span>Nov 2025</span>
+                </a>
+                <a href="https://www.credly.com/badges/61c61458-9b02-47a1-b77b-5e9046cd03a1" target="_blank" class="cert-row" rel="noopener noreferrer">
+                    <span>Discovering Entrepreneurship</span>
+                    <span>Cisco</span>
+                    <span>Nov 2025</span>
+                </a>
                 <a href="https://www.credly.com/badges/b1284996-55f1-4e86-a389-1aa0e6416b35" target="_blank" class="cert-row" rel="noopener noreferrer">
                     <span>Introduction to Cybersecurity</span>
                     <span>Cisco</span>
@@ -84,10 +94,25 @@
         <section id="projects" class="section">
             <h4 class="heading">Projects</h4>
 
-            <article class="projects-table" aria-label="Project: Image Classification with CNN">
+            <article class="projects-table" aria-label="Project: Full-Stack Android Mobile Application for Learning Baybayin">
                 <div class="project-row" role="button" tabindex="0" onclick="toggleProject(this)" onkeypress="if(event.key==='Enter') toggleProject(this)">
-                    <span>Image Classification with CNN</span>
-                    <span>In progress</span>
+                    <span>Full-Stack Android Mobile Application for Learning Baybayin</span>
+                    <span>Completed</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="project-details" style="display:none;">
+                    <p><strong>Problem:</strong> Created a mobile app to facilitate engaging learning of the Baybayin script using quizzes, lessons, and handwriting exercises.</p>
+                    <p><strong>Tools & Technologies:</strong> React Native, TypeScript, Expo, Styled Components.</p>
+                    <p><strong>Outcome:</strong> Delivered an intuitive app with interactive features aimed at improving user retention and script literacy.</p>
+                    <a href="https://github.com/emptiv/spotlight-app" target="_blank" rel="noopener noreferrer">View the GitHub repository</a> 
+                    <button class="open-modal" onclick="openModal()">View app demo video</button>
+                </div>
+            </article>
+
+            <article class="projects-table" aria-label="Project: Baybayin Handwriting Classification Model">
+                <div class="project-row" role="button" tabindex="0" onclick="toggleProject(this)" onkeypress="if(event.key==='Enter') toggleProject(this)">
+                    <span>Baybayin Handwriting Classification Model</span>
+                    <span>Completed</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="project-details" style="display:none;">
@@ -98,20 +123,21 @@
                 </div>
             </article>
 
-            <article class="projects-table" aria-label="Project: Interactive Learning Mobile App for Baybayin">
-                <div class="project-row" role="button" tabindex="0" onclick="toggleProject(this)" onkeypress="if(event.key==='Enter') toggleProject(this)">
-                    <span>Interactive Learning Mobile App for Baybayin</span>
-                    <span>In progress</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="project-details" style="display:none;">
-                    <p><strong>Problem:</strong> Created a mobile app to facilitate engaging learning of the Baybayin script using quizzes, lessons, and handwriting exercises.</p>
-                    <p><strong>Tools & Technologies:</strong> React Native, TypeScript, Expo, Styled Components.</p>
-                    <p><strong>Outcome:</strong> Delivered an intuitive app with interactive features aimed at improving user retention and script literacy.</p>
-                    <a href="https://github.com/emptiv/spotlight-app" target="_blank" rel="noopener noreferrer">View the GitHub repository</a>
-                </div>
-            </article>
         </section>
+
+        <div id="imageModal" class="modal" aria-hidden="true">
+            <div class="modal-content" role="dialog" aria-label="App demo video">
+                <button class="close-modal" onclick="closeModal()" aria-label="Close">×</button>
+
+                <video id="appVideo"
+                    controls
+                    playsinline
+                    preload="metadata">
+                    <source src="assets/demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
 
         <!-- Contact -->
         <footer id="contact" class="section contact-section">
@@ -138,6 +164,25 @@
             arrow.textContent = isVisible ? "▼" : "▲";
         }
 
+        function openModal() {
+            const modal = document.getElementById('imageModal');
+            const video = document.getElementById('appVideo');
+
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
+            video.currentTime = 0;
+            video.play();
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            const video = document.getElementById('appVideo');
+
+            video.pause();
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        }
+        
         function toggleEmail() {
             const emailEl = document.getElementById('email-text');
             emailEl.textContent = emailEl.textContent ? '' : 'marinelletorrano@gmail.com';
